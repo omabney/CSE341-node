@@ -100,7 +100,7 @@ exports.postSignup = (req, res, next) => {
           console.log("Message sent");
           return transporter.sendMail({
             to: email,
-            from: 'rao20002@byui.edu',
+            from: '<Email address>',
             subject: 'Signup succeeded!',
             html: '<h1>You successfully signed up!</h1>'
           });

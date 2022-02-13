@@ -101,7 +101,7 @@ exports.postSignup = (req, res, next) => {
           res.redirect('/login');
           return transporter.sendMail({
             to: email,
-            from: 'rao20002@byui.edu',
+            from: '<Email address>',
             subject: 'Signup succeeded!',
             html: '<h1>You successfully signed up!</h1>'
           });
@@ -157,7 +157,7 @@ exports.postReset = (req, res, next) => {
         res.redirect('/');
         transporter.sendMail({
           to: req.body.email,
-          from: 'rao20002@byui.edu',
+          from: '<Email address>',
           subject: 'Password reset',
           html: `
             <p>You requested a password reset</p>
